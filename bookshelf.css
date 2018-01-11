@@ -1,0 +1,65 @@
+body {
+    background: aquamarine url(background.png) repeat;
+    font: 15pt arial;
+}
+
+h1 {
+    white-space: nowrap;
+    text-shadow: #FFFFFF 1px 1px 0, black -1px -1px 0;
+                 #FFFFFF -1px 1px 0, black 1px -1px 0;
+    color: mediumpurple;
+}
+.header_add_table {
+    width: 600px;
+    margin: auto;
+}
+
+.form_add, .button_del, .form_save, .form_cancel, .button_edit {
+    height: 35px;
+    width: 110px;
+    margin: 6pt; 
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;   
+    border-collapse: collapse;
+}
+.td_name {    
+    color: red;
+}
+
+tr:nth-child(2n) {
+    background: rgba(204,204,255, 0.7);
+}
+
+tr:nth-child(2n-1) {
+    background: rgba(153,153,204, 0.7);
+}
+
+.td_img {
+    height: 150px;
+    width: 100px;
+}
+
+.form_edit_list {
+    width: 400px;
+    background: rgba(204,204,255, 0.7);
+    padding: 20px;
+    color: mediumpurple;
+}
+
+.form_edit_list_span {
+    display: block;
+    margin-bottom: 6pt;
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.form_text_author, .form_text_name, .form_text_year, .form_text_img {
+    width: 250px;
+    height: 20px;
+    margin: auto;
+    border-radius: 4px;
+    margin-bottom: 6pt;
+}

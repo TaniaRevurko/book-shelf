@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Книжная полка</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.2.1.js"></script> 
+    <script src="testjavascript.js"></script>
+    <link rel="stylesheet" href="bookshelf.css">
+  </head>
+  <body>
+    <div class="header_add_table"><h1>Книжная полка</h1>    
+      <input class="form_add" onclick="sectionAdd(-1);" type="button" value="Добавить книгу"/>
+      <table id="list" style="display: table;"> 
+      </table>
+      <div class="form_edit_list" style="display: none;">
+        <span class="form_edit_list_span">Редактирование книги</span><br/>
+        <span>Автор</span><br/>
+        <input class="form_text_author" type="text"/><br/>
+        <span>Название</span><br/>
+        <input class ="form_text_name" type="text"/><br/>
+        <span>Год издания</span><br/>
+        <input class ="form_text_year" type="number"/><br/>
+        <span>Картинка</span><br/>
+        <input class ="form_text_img" type="text"/><br/>
+        <input class ="form_save" onclick="saveChanges();" type="button" value="Сохранить"/>
+        <input class ="form_cancel" onclick="sectionCancel();" type="button" value="Отменить"/>
+      </div>
+    </div>
+    <script>
+      initialize();
+    </script> 
+  </body>
+</html>
